@@ -1,0 +1,27 @@
+#spring:
+#  cloud:
+#    stream:
+#      binders:
+#        kafka1:
+#          type: kafka
+#          environment:
+#            spring:
+#              cloud:
+#                stream:
+#                  kafka:
+#                    binder:
+#                      brokers: 192.168.11.90:9092
+#                      zkNodes: 192.168.11.90:2181
+#        kafka2:
+#          type: kafka
+#          environment:
+#            spring:
+#              cloud:
+#                stream:
+#                  kafka:
+#                    binder:
+#                      brokers: 192.168.11.189:9092
+#                      zkNodes: 192.168.11.189:2181
+#      bindings:
+#        input:
+#          binder: kafka1
